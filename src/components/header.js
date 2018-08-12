@@ -3,10 +3,16 @@ import Title from './header/title';
 import '../App.scss';
 
 class Header extends Component { 
+  handleChange (e) {
+    const title = e.target.value;
+    this.props.changeTitle(title);
+  }
   render() {
-    console.log(this.props);
     return (
-     <Title title={this.props.title}/>
+     <div> 
+      <Title title={this.props.title}/>
+      <input value={this.props.title} onChange={this.handleChange.bind(this)}/>
+     </div>
     );
   }
 }
