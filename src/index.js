@@ -4,6 +4,7 @@ import Layout from './components/layout';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import './App.scss';
 ReactDOM.render(<Layout />, document.getElementById('root'));
 registerServiceWorker();

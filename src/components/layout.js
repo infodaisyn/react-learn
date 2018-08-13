@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Footer from './footer';
+import {Button} from 'react-bootstrap';
 import '../App.scss';
 
 class Layout extends Component { 
@@ -22,6 +23,7 @@ class Layout extends Component {
     // },3000)
     return (
      <div>
+          <Button bsStyle="success">Success</Button>
          {/* My name is {this.state.name} */}
          <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
          {/* <Header name={"name is something"} title={"welcome1"}/>          */}
